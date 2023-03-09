@@ -348,3 +348,10 @@ else:
             st.info("Kolonlar için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_col_code * n_of_floors)))
             st.info("Kirişler için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_beam_code * n_of_floors)))
             st.info("Perdeler için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_sw_code * n_of_floors)))
+            
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
