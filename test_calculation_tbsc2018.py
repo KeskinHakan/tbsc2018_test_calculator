@@ -185,7 +185,7 @@ if language == "English":
             st.info("Total Cover Meter Test for Shear Walls: " + str(int(min_cmt_sw_code * n_of_floors)))
 else:
     # st.title("Rule Based Classification of Customer's Data")
-    st.markdown("<h2 style='text-align: center; color: grey;'>TBDY 2018'e göre Saha Test Sayısı Hesaplayıcısı </h2>",
+    st.markdown("<h2 style='text-align: center; color: grey;'>TBDY 2018'e göre Saha Test Sayısı Hesaplayıcı </h2>",
                 unsafe_allow_html=True)
     """
     Bu uygulama, Türkiye Bina Deprem Yönetmeliği 2018 - Bölüm 15'e göre test sayılarının hesaplanması için hazırlanmıştır.
