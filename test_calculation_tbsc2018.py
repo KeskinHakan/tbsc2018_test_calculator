@@ -8,9 +8,7 @@ st.set_page_config(page_title="Site Test Numbers According to TBSC 2018", page_i
 pd.set_option("display.width", 500)
 pd.set_option("display.max_columns", None)
 
-
 language = st.sidebar.selectbox("App Language", {"Turkish", "English"})
-
 
 # Calculation of the Test Amounts.
 
@@ -36,6 +34,10 @@ if language == "English":
         8- Number of Shear Wall for each story(If existing)
 
     After these choices this app will give the minimum test numbers according to TBSC 2018.
+    
+    These results are prepared just for information. Please valid yourself be sure before to decide number of tests by the app. 
+    
+    Do not forget to check related parts in the TBSC 2018 - Chapter 15!
 
     """
 
@@ -185,7 +187,7 @@ if language == "English":
             st.info("Total Cover Meter Test for Shear Walls: " + str(int(min_cmt_sw_code * n_of_floors)))
 else:
     # st.title("Rule Based Classification of Customer's Data")
-    st.markdown("<h2 style='text-align: center; color: grey;'>TBDY 2018'e göre Saha Test Sayısı Hesaplayıcı </h2>",
+    st.markdown("<h2 style='text-align: center; color: grey;'>TBDY 2018'e göre Saha Test Sayısı Hesaplayıcısı </h2>",
                 unsafe_allow_html=True)
     """
     Bu uygulama, Türkiye Bina Deprem Yönetmeliği 2018 - Bölüm 15'e göre test sayılarının hesaplanması için hazırlanmıştır.
@@ -202,6 +204,10 @@ else:
         8- Her kat için toplam perde duvar adeti (eğer mevcutsa)
 
     Bu seçeneklerden sonra uygulama, toplam minimum test sayısını TBDY 2018'e göre hesaplayacaktır.
+    
+    Sonuçlar yalnızca bilgi amaçlı hazırlanmıştır. Lütfen test sayılarına karar vermeden önce emin olunuz.
+  
+    TBDY 2018 - Bölüm 15'te ilgili bölümleri kontrol etmeyi unutmayın!
 
     """
 
@@ -348,7 +354,7 @@ else:
             st.info("Kolonlar için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_col_code * n_of_floors)))
             st.info("Kirişler için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_beam_code * n_of_floors)))
             st.info("Perdeler için Toplam Donatı Tespit Cihazı Testi: " + str(int(min_cmt_sw_code * n_of_floors)))
-            
+
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
